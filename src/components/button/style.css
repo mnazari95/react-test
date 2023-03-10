@@ -1,0 +1,13 @@
+.btnWrapper {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.mBtn {
+  border-color: aliceblue;
+  color: blueviolet;
+  padding: 1.3em 1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
