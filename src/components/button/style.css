@@ -10,4 +10,6 @@
   padding: 1.3em 1em;
   border-radius: 8px;
   cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
 }
