@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/button/Button';
+import Input from './components/input/input';
 
 function App() {
 
@@ -9,7 +10,13 @@ function App() {
   }
   return (
     <div className="App">
-      <Button display={"Custom Button Component"} handleParentFunc={handleBtnClick} />
+
+      <Input ph={"SAMPle text"}/>
+      <Button 
+        display={"Custom Button Component"} 
+        handleParentFunc={handleBtnClick} />
+
+
     </div>
   );
 }
