@@ -12,4 +12,10 @@
   cursor: pointer;
   outline: none;
   text-transform: uppercase;
+  border: none;
+}
+
+.mBtn:focus {
+  transition: background-color 0.25s ease-in-out;
+  background-color: aquamarine;
 }

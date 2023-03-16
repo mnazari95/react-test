@@ -5,7 +5,7 @@ import Input from './components/input/input';
 function App() {
 
   const handleBtnClick = (callback) => {
-    alert("parent component")
+    console.log("parent")
     callback();
   }
   return (

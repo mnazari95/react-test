@@ -3,8 +3,8 @@ import './style.css';
 function Button(props) {
 
   const btnFunc = () => {
-    //console.log("button function activated.");
-    alert('inner child function')
+    console.log("button function activated.");
+    //alert('inner child function')
   }
 
   return(

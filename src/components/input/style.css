@@ -5,7 +5,35 @@
 }
 
 .mInput {
-    border-radius: 8px;
+    border: none;
+    border-bottom: 1px solid black;
     padding: 0.3em 0.5em;
     height: 2em;
+    animation: 1s both alternate inputTransition;
+    animation-play-state: paused;
+}
+
+.mInput:focus {
+    outline: none !important;
+    animation-play-state: running;
+}
+
+@keyframes inputTransition {
+    0% {
+        border-bottom: none;
+        border-left: none;
+    }
+
+    25% {
+        border-left: 10px solid orange;
+    }
+
+    75% {
+        border-bottom: 8px solid green;
+    }
+
+    100% {
+        border-bottom: 4px solid green;
+        border-left: 4px solid orange;
+    }
 }
