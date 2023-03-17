@@ -9,31 +9,57 @@
     border-bottom: 1px solid black;
     padding: 0.3em 0.5em;
     height: 2em;
-    animation: 1s both alternate inputTransition;
     animation-play-state: paused;
 }
 
 .mInput:focus {
     outline: none !important;
+    animation: 1s both alternate inputTransition;
     animation-play-state: running;
 }
 
+@keyframes moveTxtHorizontal {
+    0% {
+        
+    }
+
+    50% {
+        
+    }
+
+    100% {
+        /* transform: translateX(0%); */
+    }
+}
 @keyframes inputTransition {
     0% {
-        border-bottom: none;
-        border-left: none;
+        /* border-bottom: none;
+        border-left: none; */
+        transform: translateX(0%);
     }
 
     25% {
         border-left: 10px solid orange;
+        border-right: 10px solid orange;
+        border-bottom: 10px solid black;
+        transform: scaleX(1.5);
+    }
+
+    50% {
+        border-left: 4px solid orange;
+        border-right: 4px solid orange;
+        border-bottom: 4px solid black;
+        transform: scaleX(1.3);
+        transform: translateX(15%);
+        
     }
 
     75% {
-        border-bottom: 8px solid green;
+        border-bottom: 2px solid black;
+        transform: scaleX(1.1);
     }
 
     100% {
-        border-bottom: 4px solid green;
-        border-left: 4px solid orange;
+
     }
 }
