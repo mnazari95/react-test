@@ -1,14 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import './style.css'
 
 const Input = (props) => {
 
+    const inputValue = useState("")
+
+    const LabelElem =  (props) => {
+        return(
+            <div className="inputLabel">{props.label}</div>
+        );
+    }
+
     return(
-        <div 
-            className="inputWrapper">
-            <input 
-                className="mInput" 
-                placeholder={props.ph}/>
+        <div className="inputWrapper">
+            <LabelElem label={props.ph}/>
+            <input className="mInput"/>
         </div>
     );
 }

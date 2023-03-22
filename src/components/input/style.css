@@ -1,7 +1,12 @@
 .inputWrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.inputLabel {
+    font-size: medium;
 }
 
 .mInput {
