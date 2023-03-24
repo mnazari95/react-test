@@ -7,14 +7,16 @@ const Input = (props) => {
 
     const LabelElem =  (props) => {
         return(
-            <div className="inputLabel">{props.label}</div>
+            <div className="inputLabel">{props.label+":"}</div>
         );
     }
 
     return(
+        <div className="mainWrapper">
         <div className="inputWrapper">
             <LabelElem label={props.ph}/>
             <input className="mInput"/>
+        </div>
         </div>
     );
 }

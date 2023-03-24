@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
 
-      <Input ph={"SAMPle text"}/>
+      <Input ph={"example label"}/>
       <Button 
         display={"Custom Button Component"} 
         handleParentFunc={handleBtnClick} />
